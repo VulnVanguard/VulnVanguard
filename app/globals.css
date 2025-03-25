@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  overflow-x: hidden;
+  user-select: none;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.accordion {
+  width: max(300px, 80%);
+  min-width: 300px;
+}
+
+.accordion__item {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 10px 0;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.accordion__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.accordion__button[aria-expanded="true"] {
+  border-bottom: 1px solid white;
+}
+
+.accordion__button:after {
+  display: inline-block;
+  content: "";
+  height: 10px;
+  width: 10px;
+  margin-right: 12px;
+  border-bottom: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(-45deg);
+  transition: transform 0.3s;
+}
+
+.accordion__button[aria-expanded="true"]::after,
+.accordion__button[aria-selected="true"]::after {
+  transform: rotate(45deg);
+}
+
+.accordion__panel {
+  padding: 10px;
+}
+.wrapper {
+  padding: 10px 10%;
+}
+#card-area {
+  padding: 10px 0;
+}
+
+/* .box-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0.1fr, 1fr));
+  grid-gap: 30px;
+  margin-top: 50px;
+} */
+.box {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.box img {
+  width: 300px;
+  height: 300px; /* Set the desired height */
+  object-fit: cover; /* Crop the extra parts */
+  object-position: center top; /* Crop from the bottom */
+  border-radius: 5px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.overlay {
+  height: 0;
+  width: 100%;
+  background: linear-gradient(transparent, rgba(28, 28, 28, 0.97) 70%);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.overlay h3 {
+  /* margin-top: 10rem; */
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 90%;
+  font-family: bebas neue;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.overlay a {
+  margin-top: 10px;
+  color: #262626;
+  text-decoration: none;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 50px;
+  text-align: center;
+  padding: 5px 15px;
+}
+
+.boxLhover img {
+  transform: scale(1.2);
+}
+.box:hover .overlay {
+  height: 100%;
+}
+.popup-content {
+  position: absolute;
+  background: #ff0000;
+  border: 2px solid #ff0000;
+  border-radius: 5px;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(182, 179, 179, 0.1);
+}
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+[role="tooltip"].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup="tooltip"].popup-overlay {
+  background: transparent;
+  
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+}
