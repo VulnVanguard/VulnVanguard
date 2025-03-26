@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import React from "react";
 
 export default function Header() {
   const [open, setOpen] = useState(false);

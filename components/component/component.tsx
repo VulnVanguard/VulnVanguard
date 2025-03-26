@@ -8,6 +8,7 @@ import PopUp from "./Popup";
 import JudgeCard from "./judgeCard";
 import Perks from "./Perks";
 import ProblemSection from "./statements";
+import React from "react";
 export function Component() {
   useEffect(() => {
     const script = document.createElement("script");
@@ -363,7 +364,6 @@ export function Component() {
               </p>
               <div className="flex flex-col w-[300px] justify-center gap-1 bg-white p-4 rounded-2xl">
                 <a
-                  width="100%"
                   href="https://geeksforgeeks.org"
                   target="_blank"
                   rel="noreferrer noopener"
@@ -411,7 +411,6 @@ export function Component() {
               <div className="flex flex-wrap justify-center items-center gap-4">
                 <div className="flex w-[300px] flex-col justify-center gap-1 bg-white p-4 rounded-2xl">
                   <a
-                    width="100%"
                     href="https://polygon.technology/"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -427,7 +426,6 @@ export function Component() {
                 </div>
                 <div className="flex w-[300px] flex-col justify-center gap-1 bg-white p-4 rounded-2xl">
                   <a
-                    width="100%"
                     href="https://ethindia.co/"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -443,7 +441,6 @@ export function Component() {
                 </div>
                 <div className="flex w-[300px] flex-col justify-center gap-1 bg-white p-4 rounded-2xl">
                   <a
-                    width="100%"
                     href="https://niwi.ai/"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -459,7 +456,6 @@ export function Component() {
                 </div>
                 <div className="flex w-[300px] flex-col justify-center gap-1 bg-white p-4 rounded-2xl">
                   <a
-                    width="100%"
                     // href="https://niwi.ai/"
                     href=""
                     target="_blank"
@@ -484,7 +480,7 @@ export function Component() {
               <div className="flex flex-wrap max-md:justify-center max-md:items-center gap-4">
                 <div className="flex w-[300px] flex-col justify-center gap-1 bg-white p-4 rounded-2xl">
                   <a
-                    width="100%"
+
                     // href="https://niwi.ai/"
                     href=""
                     target="_blank"
@@ -501,7 +497,6 @@ export function Component() {
                 </div>
                 <div className="flex w-[300px] flex-col justify-center gap-1 bg-white p-4 rounded-2xl">
                   <a
-                    width="100%"
                     // href="https://niwi.ai/"
                     href=""
                     target="_blank"
@@ -525,7 +520,6 @@ export function Component() {
               <div className="flex flex-wrap max-md:justify-center max-md:items-center gap-4">
                 <div className="flex w-[300px] flex-col justify-center gap-1 bg-white p-4 rounded-2xl">
                   <a
-                    width="100%"
                     href="https://aptosfoundation.org/"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -541,7 +535,6 @@ export function Component() {
                 </div>
                 <div className="flex w-[300px] flex-col justify-center gap-1 bg-white/50 p-4 rounded-2xl">
                   <a
-                    width="100%"
                     href="https://https://www.quillaudits.com/smart-contract-audit/"
                     target="_blank"
                     rel="noreferrer noopener"
