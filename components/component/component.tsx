@@ -6,7 +6,7 @@ import FaqSection from "./FaqSection";
 import Countdown from "./CountDown";
 import PopUp from "./Popup";
 import JudgeCard from "./judgeCard";
-import Perks from "./Perks";
+import Perks from "@/components/component/Perks";
 import ProblemSection from "./statements";
 import React from "react";
 export function Component() {
