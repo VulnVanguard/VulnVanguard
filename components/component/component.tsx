@@ -9,7 +9,7 @@ import JudgeCard from "./judgeCard";
 import Perks from "@/components/component/Perks";
 import ProblemSection from "./statements";
 import React from "react";
-import { Timeline } from "./Timeline";
+import { Timeline } from "./Timeline/Timeline";
 export function Component() {
   useEffect(() => {
     const script = document.createElement("script");
@@ -28,10 +28,10 @@ export function Component() {
           <div className="w-11/12 md:w-10/12 mx-auto flex flex-col justify-center space-y-4">
             <div className="space-y-2 my-4">
               <span className="text-lg md:text-2xl font-medium tracking-wide text-gray-600 dark:text-gray-400">
-                April 19-20, 2024
+                April 25-26, 2025
               </span>
               <h1 className="text-6xl text-wrap font-bold tracking-tighter xl:text-8xl/none text-white">
-                Hack - Innovate
+                Vuln - VANGUARD
               </h1>
               <p className="max-w-[500px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 Innovate with the best. Build the future of the web. Exciting

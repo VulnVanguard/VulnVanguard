@@ -6,7 +6,7 @@ import Header from "@/components/component/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Hack-Innovate",
+  title: "Vuln-VANGUARD",
   description: "Largest Office Hackathon at SRMIST Delhi-NCR",
   image: "/icon.png",
 };
