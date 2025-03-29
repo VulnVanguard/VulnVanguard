@@ -10,7 +10,7 @@ import React from "react";
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="backdrop-blur-xl top-0 fixed text-black dark:text-white w-screen z-50 lg:px-6 md:h-[80px] h-auto max-md:p-4 max-md:justify-center max-md:flex-col max-md:items-center lg:py-10 flex items-center">
+    <header className="top-4 fixed text-black dark:text-white w-screen z-50 lg:px-6 md:h-[80px] h-auto max-md:p-4 max-md:justify-center max-md:flex-col max-md:items-center lg:py-10 flex items-center">
       <div className="flex items-center justify-between w-full">
         <Link className="flex items-center justify-center" href="/">
           <Image src="/logo.webp" alt="Innovate" width={80} height={80} />
@@ -31,7 +31,7 @@ export default function Header() {
           />
         )}
       </div>
-      <nav
+      {/* <nav
         className={
           open
             ? "items-center md:ml-auto flex max-md:flex-col max-md:justify-center max-md:items-center max-md:h-auto md:flex gap-4 md:gap-6 "
@@ -74,7 +74,9 @@ export default function Header() {
         >
           Communities
         </Link>
-      </nav>
+      </nav> */}
+
+      <div></div>
     </header>
   );
 }

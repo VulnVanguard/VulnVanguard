@@ -9,6 +9,7 @@ import JudgeCard from "./judgeCard";
 import Perks from "@/components/component/Perks";
 import ProblemSection from "./statements";
 import React from "react";
+import { Timeline } from "./Timeline";
 export function Component() {
   useEffect(() => {
     const script = document.createElement("script");
@@ -30,20 +31,20 @@ export function Component() {
                 April 19-20, 2024
               </span>
               <h1 className="text-6xl text-wrap font-bold tracking-tighter xl:text-8xl/none text-white">
-                Hack-Innovate
+                Hack - Innovate
               </h1>
               <p className="max-w-[500px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 Innovate with the best. Build the future of the web. Exciting
                 prizes await.
               </p>
             </div>
-
+{/* 
             <div
               className="apply-button"
               data-hackathon-slug="hackinnovate"
               data-button-theme="light"
-            // style="height: 44px; width: 312px"
-            ></div>
+            style="height: 44px; width: 312px"
+            ></div> */}
           </div>
           <div className="max-[450px]:hidden font-bold text-4xl absolute bottom-0 h-[150px] w-10/12 mx-auto flex items-center justify-center text-white">
             <Countdown />
@@ -318,19 +319,8 @@ export function Component() {
             </div>
           </div>
         </section>
-        <section className="bg-gray-900 py-12 md:py-16 xl:py-24">
-          <div className="w-11/12 md:w-10/12 mx-auto  grid gap-6 px-4 items-center justify-center text-center md:px-6">
-            <div className="space-y-3">
-              {/* <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl">
-              Timeline
-            </h2> */}
-              <img src="/timeline.webp" alt="Timeline" className=" w-screen" loading="lazy" />
-              {/* <p className="mx-auto max-w-[600px] text-gray-500/70 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Don&apos;t miss out on the important milestones. Mark your
-              calendar for the.
-            </p> */}
-            </div>
-          </div>
+        <section className="bg-gray-900 relative h-full w-full">
+         <Timeline /> 
         </section>
         <section id="Perks" className=" py-16 md:py-16 xl:py-24">
           <div className="w-11/12 md:w-10/12 mx-auto grid gap-6 lg:grid-cols-2 xl:gap-10">
