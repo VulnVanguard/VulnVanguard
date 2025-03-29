@@ -319,7 +319,7 @@ export function Component() {
             </div>
           </div>
         </section>
-        <section className="bg-gray-900 relative h-full w-full">
+        <section className="bg-black relative h-full w-full">
          <Timeline /> 
         </section>
         <section id="Perks" className=" py-16 md:py-16 xl:py-24">

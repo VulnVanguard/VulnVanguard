@@ -11,10 +11,10 @@ export const Timeline = () => {
 
   const pinnedref = useRef(null); // pinned
   const stickyHeaderref = useRef(null); // sticky-header
-  const progressBarContainerref = useRef(null); // progress-bar-container
-  const progressBarref = useRef(null);
-  const indicesref = useRef(null);
-  const indicesContainerref = useRef(null);
+  const progressBarContainerref = useRef(null); // progress-bar
+  const progressBarref = useRef(null); // progress
+  const indicesref = useRef(null); // index
+  const indicesContainerref = useRef(null); // indices
   const [isProgressBarVisible, setisProgressBarVisible] = useState(false);
   const [currentActiveIndex, setcurrentActiveIndex] = useState(-1);
 
@@ -74,6 +74,7 @@ export const Timeline = () => {
       start: "top top",
       end: `+=${pinnedHeight}`,
       pin: true,
+      scrub: 0.5,
       pinSpacing: true,
       onLeave: () => {
         hideProgressAndIndices();
@@ -107,17 +108,13 @@ export const Timeline = () => {
         if (progress > 1) {
           progressHeight = ((progress - 1) / cardsCount) * 100;
           colorindex = Math.min(Math.floor(progress - 1), cardsCount - 1);
-        }
-
-        gsap.to(progressBarref.current, {
-          height: `${progressHeight}%`,
-          backgroundColor: progressColor[colorindex],
-          duration: 0.3,
-          ease: "power2.Out",
-        });
-
-        if (isProgressBarVisible) {
           animate(colorindex);
+          gsap.to(progressBarref.current, {
+            height: `${progressHeight}%`,
+            backgroundColor: progressColor[colorindex],
+            duration: 0.3,
+            ease: "power2.Out",
+          });
         }
 
         cards.forEach((card, index) => {
@@ -154,9 +151,9 @@ export const Timeline = () => {
       <div ref={stickyHeaderref} className="sticky-header">
         <h1>ROADMAP.</h1>
       </div>
-        <div ref={progressBarContainerref} className="progress-bar">
-          <div ref={progressBarref} className="progress"></div>
-        </div>
+      <div ref={progressBarContainerref} className="progress-bar">
+        <div ref={progressBarref} className="progress"></div>
+      </div>
 
       <div ref={indicesContainerref} className="indices">
         <div ref={indicesref} className="index" id="index-1">
@@ -196,54 +193,96 @@ export const Timeline = () => {
         </div>
       </div>
 
-
-        <div className="card" id="card-1">
-          <div className="card-phase">
-            <p>Phase #01</p>
-          </div>
-          <div className="card-title">
-            <p>From April 25th</p>
-            <h1>
-              Event <span>Initiated</span>
-            </h1>
-          </div>
+      <div className="card" id="card-1">
+        <div className="card-phase">
+          <p>Phase #01</p>
         </div>
-
-        <div className="card" id="card-2">
-          <div className="card-phase">
-            <p>Phase #02</p>
-          </div>
-          <div className="card-title">
-            <p>From April 25th</p>
-            <h1>
-              Event <span>Initiated</span>
-            </h1>
-          </div>
+        <div className="card-title">
+          <p>From April 25th</p>
+          <h1>
+            Event <span>Initiated</span>
+          </h1>
         </div>
-
-        <div className="card" id="card-3">
-          <div className="card-phase">
-            <p>Phase #03</p>
-          </div>
-          <div className="card-title">
-            <p>From April 25th</p>
-            <h1>
-              Event <span>Initiated</span>
-            </h1>
-          </div>
-        </div>
-
-        <div className="card" id="card-4">
-          <div className="card-phase">
-            <p>Phase #04</p>
-          </div>
-          <div className="card-title">
-            <p>From April 25th</p>
-            <h1>
-              Event <span>Initiated</span>
-            </h1>
-          </div>
+        <div className="card-bg">
+          <h1>01</h1>
         </div>
       </div>
+
+      <div className="card" id="card-2">
+        <div className="card-phase">
+          <p>Phase #02</p>
+        </div>
+        <div className="card-title">
+          <p>From April 25th</p>
+          <h1>
+            Event <span>Initiated</span>
+          </h1>
+        </div>
+
+        <div className="card-bg">
+          <h1>02</h1>
+        </div>
+      </div>
+
+      <div className="card" id="card-3">
+        <div className="card-phase">
+          <p>Phase #03</p>
+        </div>
+        <div className="card-title">
+          <p>From April 25th</p>
+          <h1>
+            Event <span>Initiated</span>
+          </h1>
+        </div>
+        <div className="card-bg">
+          <h1>03</h1>
+        </div>
+      </div>
+
+      <div className="card" id="card-4">
+        <div className="card-phase">
+          <p>Phase #04</p>
+        </div>
+        <div className="card-title">
+          <p>From April 25th</p>
+          <h1>
+            Event <span>Initiated</span>
+          </h1>
+        </div>
+        <div className="card-bg">
+          <h1>04</h1>
+        </div>
+      </div>
+
+      <div className="card " id="card-5">
+        <div className="card-phase">
+          <p>Phase #05</p>
+        </div>
+        <div className="card-title">
+          <p>From April 25th</p>
+          <h1>
+            Event <span>Initiated</span>
+          </h1>
+        </div>
+        <div className="card-bg">
+          <h1>05</h1>
+        </div>
+      </div>
+
+      <div className="card .glow" id="card-6">
+        <div className="card-phase">
+          <p>Phase #06</p>
+        </div>
+        <div className="card-title">
+          <p>From April 25th</p>
+          <h1>
+            Event <span>Initiated</span>
+          </h1>
+        </div>
+        <div className="card-bg">
+          <h1>06</h1>
+        </div>
+      </div>
+    </div>
   );
 };
