@@ -25,7 +25,7 @@ export const Timeline = () => {
     const cards = gsap.utils.toArray(".card") as HTMLElement[];
     const indices = gsap.utils.toArray(".index") as HTMLElement[];
     const cardsCount = cards.length;
-    const pinnedHeight = window.innerHeight * (cardsCount + 1);
+    // const pinnedHeight = window.innerHeight * (cardsCount + 1);
     const startRotation = [0, 5, 0, -5];
     const endRotation = [-10, -5, 10, 5];
     const progressColor = ["#ecb74c", "#7dd8cd", "#e0ff57", "#7dd8cd"];
