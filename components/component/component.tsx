@@ -320,7 +320,7 @@ export function Component() {
           </div>
         </section>
         <section className="bg-black relative h-full w-full">
-         {/* <Timeline />  */}
+         <Timeline /> 
         </section>
         <section id="Perks" className=" py-16 md:py-16 xl:py-24">
           <div className="w-11/12 md:w-10/12 mx-auto grid gap-6 lg:grid-cols-2 xl:gap-10">
