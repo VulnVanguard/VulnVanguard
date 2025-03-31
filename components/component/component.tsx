@@ -322,7 +322,7 @@ export function Component() {
         <section className="bg-black relative h-full w-full">
          <Timeline /> 
         </section>
-        <section id="Perks" className=" py-16 md:py-16 xl:py-24">
+        {/* <section id="Perks" className=" py-16 md:py-16 xl:py-24">
           <div className="w-11/12 md:w-10/12 mx-auto grid gap-6 lg:grid-cols-2 xl:gap-10">
             <div className="flex flex-col justify-center items-center space-y-4">
               <img src="/perk_rotate.webp" alt="rotate" className="!max-w-[400px] max-[450px]:!max-w-[300px] max-[450px]:w-10/12 opacity-60 animate-[spin_10s_linear_infinite]" loading="lazy" />
@@ -335,7 +335,7 @@ export function Component() {
             </div>
             <Perks />
           </div>
-        </section>
+        </section> */}
         <section id="Sponsors" className=" py-12 md:py-16 xl:py-24 overflow-x-hidden">
           <div className="w-11/12 md:w-10/12 mx-auto flex flex-col gap-8 justify-center items-center">
             <div className="w-11/12 md:w-10/12 mx-auto flex flex-col gap-4 justify-center items-center">
