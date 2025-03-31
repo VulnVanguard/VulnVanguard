@@ -11,7 +11,16 @@ import ProblemSection from "./statements";
 import React from "react";
 import { Timeline } from "./Timeline/Timeline";
 export function Component() {
- 
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
     <>
       <div className="w-screen bg-gray-50/90 border-t border-b border-gray-200 dark:bg-gray-950 dark:border-gray-800 overflow-x-hidden">
@@ -311,7 +320,7 @@ export function Component() {
           </div>
         </section>
         <section className="bg-black relative h-full w-full">
-         <Timeline /> 
+         {/* <Timeline />  */}
         </section>
         <section id="Perks" className=" py-16 md:py-16 xl:py-24">
           <div className="w-11/12 md:w-10/12 mx-auto grid gap-6 lg:grid-cols-2 xl:gap-10">

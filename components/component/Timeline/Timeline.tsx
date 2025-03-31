@@ -25,7 +25,7 @@ export const Timeline = () => {
     const cards = gsap.utils.toArray(".card") as HTMLElement[];
     const indices = gsap.utils.toArray(".index") as HTMLElement[];
     const cardsCount = cards.length;
-    // const pinnedHeight = typeof window !== "undefined" ? window.innerHeight * (cardsCount + 1) : 0;
+    const pinnedHeight = window.innerHeight * (cardsCount + 1) ;
     const startRotation = [0, 5, 0, -5];
     const endRotation = [-10, -5, 10, 5];
     const progressColor = ["#ecb74c", "#7dd8cd", "#e0ff57", "#7dd8cd"];
@@ -72,7 +72,7 @@ export const Timeline = () => {
     ScrollTrigger.create({
       trigger: pinnedref.current,
       start: "top top",
-      // end: `+=${pinnedHeight}`,
+      end: `+=${pinnedHeight}`,
       pin: true,
       scrub: 0.5,
       pinSpacing: true,
