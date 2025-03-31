@@ -9,7 +9,7 @@ import JudgeCard from "./judgeCard";
 import Perks from "@/components/component/Perks";
 import ProblemSection from "./statements";
 import React from "react";
-import { Timeline } from "./Timeline/Timeline";
+// import { Timeline } from "./Timeline/Timeline";
 export function Component() {
   useEffect(() => {
     const script = document.createElement("script");

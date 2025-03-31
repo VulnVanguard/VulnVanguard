@@ -1,3 +1,4 @@
+"use client";
 import "./styles.css";
 import gsap from "gsap";
 import React from "react";
