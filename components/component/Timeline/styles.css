@@ -446,9 +446,28 @@
   
   @media (max-width: 900px) {
     .card {
-      width: 75%;
+      width: 80%;
       height: 50%;
     }
+
+    .sticky-header {
+      position: relative;
+      top: 55%;
+      left: 58%;
+      display: flex;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+
+    .sticky-header h1 {
+      font-size: 22vw;
+      font-weight: lighter;
+      color: transparent;
+      -webkit-text-stroke: 1px white;
+      text-align: center;
+      font-family: "myfont", sans-serif;
+    }
+  
   
     .card-phase p {
       font-size: 18px;
@@ -461,4 +480,16 @@
       font-weight: lighter;
       line-height: 90%;
     }
+
+    .progress-bar {
+      display: none;
+    }
+    .indices{
+      display: none;
+    }
+
+    .card-bg{
+      display: none;
+    }
+
   }

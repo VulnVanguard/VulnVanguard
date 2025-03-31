@@ -2,7 +2,6 @@
 import React from "react";
 import dynamic from "next/dynamic";
 
-// Lazy load Lottie to avoid SSR issues
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 import Wifi from "../../lib/wired-lineal-64-wifi.json";

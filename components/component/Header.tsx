@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+import React, { useRef, useState } from "react";
 import { IoMdClose } from "react-icons/io";
-import React from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { ScrollTrigger, gsap, useGSAP } from "@/providers/gsap";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -31,6 +31,9 @@ export default function Header() {
           />
         )}
       </div>
+
+
+
       {/* <nav
         className={
           open
@@ -75,8 +78,6 @@ export default function Header() {
           Communities
         </Link>
       </nav> */}
-
-      <div></div>
     </header>
   );
 }

@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+
 import { useEffect } from "react";
 import MentorCard from "./mentorCard";
 import FaqSection from "./FaqSection";
