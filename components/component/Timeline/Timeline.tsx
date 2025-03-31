@@ -1,6 +1,5 @@
 "use client";
 import "./styles.css";
-
 import React from "react";
 import { useRef, useState } from "react";
 import { ScrollTrigger, gsap, useGSAP } from "@/providers/gsap";
@@ -8,7 +7,7 @@ import { ScrollTrigger, gsap, useGSAP } from "@/providers/gsap";
 export const Timeline = () => {
   gsap.registerPlugin(ScrollTrigger);
   gsap.ticker.lagSmoothing(0);
-
+  
   const pinnedref = useRef(null); // pinned
   const stickyHeaderref = useRef(null); // sticky-header
   const progressBarContainerref = useRef(null); // progress-bar
@@ -71,7 +70,7 @@ export const Timeline = () => {
 
     ScrollTrigger.create({
       trigger: pinnedref.current,
-      start: "top top",
+      start: "top",
       end: `+=${pinnedHeight}`,
       pin: true,
       scrub: 0.5,

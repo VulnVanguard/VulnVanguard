@@ -7,12 +7,12 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Vuln-VANGUARD",
   description: "<<Trust Nothing, Secure Everything>>",
-  image: "/icon.png",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <link rel="icon" href="/logo.webp" /> 
       <body className={inter.className}>
         <Header />
         {children}

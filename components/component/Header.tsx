@@ -13,7 +13,7 @@ export default function Header() {
     <header className="top-4 fixed text-black dark:text-white w-screen z-50 lg:px-6 md:h-[80px] h-auto max-md:p-4 max-md:justify-center max-md:flex-col max-md:items-center lg:py-10 flex items-center">
       <div className="flex items-center justify-between w-full">
         <Link className="flex items-center justify-center" href="/">
-          <Image src="/logo.webp" alt="Innovate" width={80} height={80} />
+          <Image src="/logo.webp" alt="Innovate" width={120} height={120} />
         </Link>
         {!open ? (
           <GiHamburgerMenu
