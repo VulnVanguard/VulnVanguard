@@ -34,6 +34,6 @@
     "next-env.d.ts",
     "src/utils/contentful.ts",
     ".next/types/**/*.ts"
-  ],
+, "app/layout.js", "app/page.js"  ],
   "exclude": ["node_modules"]
 }
