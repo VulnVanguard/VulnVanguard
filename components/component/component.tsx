@@ -10,6 +10,7 @@ import Perks from "@/components/component/Perks";
 import ProblemSection from "./statements";
 import React from "react";
 import { Timeline } from "./Timeline/Timeline";
+import HomePage from "./Home/home";
 export function Component() {
   // useEffect(() => {
   //   const script = document.createElement("script");
@@ -23,6 +24,9 @@ export function Component() {
   // }, []);
   return (
     <>
+    <HomePage/>
+        
+
       <div className="w-screen bg-gray-50/90 border-t border-b border-gray-200 dark:bg-gray-950 dark:border-gray-800 overflow-x-hidden">
         <section className="bg-[url('/innovate_hero.webp')] bg-cover bg-center bg-no-repeat h-screen !w-screen grid gap-4 px-4 py-12 md:py-16 xl:px-6">
           <div className="w-11/12 md:w-10/12 mx-auto flex flex-col justify-center space-y-4">
@@ -321,6 +325,8 @@ export function Component() {
         </section>
         <section className="bg-black relative h-full w-full">
          <Timeline /> 
+
+         
         </section>
         <section id="Perks" className=" py-16 md:py-16 xl:py-24">
           <div className="w-11/12 md:w-10/12 mx-auto grid gap-6 lg:grid-cols-2 xl:gap-10">
