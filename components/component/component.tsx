@@ -333,7 +333,7 @@ export function Component() {
                 <p className="max-w-[600px] text-gray-500/70 dark:text-gray-400/70">Fueling Innovation: Unlimited snacks, and boundless creativity - just a taste of the perks at our hackathon!</p>
               </div>
             </div>
-            <Perks />
+            {/* <Perks /> */}
           </div>
         </section>
         <section id="Sponsors" className=" py-12 md:py-16 xl:py-24 overflow-x-hidden">
