@@ -1,7 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import Header from "@/components/component/Header";
+import Header from "@/components/component/Header/Header";
+import SmoothScrolling from "@/components/component/SmoothScroll";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -12,10 +13,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <link rel="icon" href="/logo.webp" /> 
+      <link rel="icon" href="/logo.webp" />
+
       <body className={inter.className}>
-        <Header />
-        {children}
+        <SmoothScrolling>
+          <Header />
+          {children}
+        </SmoothScrolling>
       </body>
     </html>
   );
