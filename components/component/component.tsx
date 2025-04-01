@@ -4,15 +4,13 @@ import { useEffect } from "react";
 import MentorCard from "./mentorCard";
 import FaqSection from "./FaqSection";
 import Countdown from "./CountDown";
-import PopUp from "./Popup";
 import JudgeCard from "./judgeCard";
 import Perks from "@/components/component/Perks";
 import ProblemSection from "./statements";
 import React from "react";
 import { Timeline } from "./Timeline/Timeline";
 import { ThreeDMarquee } from "./ThreedMarquee";
-import HomePage from "./HeroSection/HeroSection";
-
+import { HeroSection } from "./HeroSection/HeroSection";
 
 export function Component() {
   useEffect(() => {
@@ -26,43 +24,16 @@ export function Component() {
     };
   }, []);
 
-  const images = [
- 
-
-
-  ];
+  const images = [];
   return (
     <>
-      <div className="w-screen bg-gray-50/90 border-t border-b border-gray-200 dark:bg-gray-950 dark:border-gray-800 overflow-x-hidden">
-        <section className=" bg-cover bg-center bg-no-repeat h-screen !w-screen grid gap-4 px-4 py-12 md:py-16 xl:px-6">
-
-        <HomePage />
-          {/* <div className="w-11/12 md:w-10/12 mx-auto flex flex-col justify-center space-y-4">
-            <div className="space-y-2 my-4">
-              <span className="text-lg md:text-2xl font-medium tracking-wide text-gray-600 dark:text-gray-400">
-                April 25-26, 2025
-              </span>
-              <h1 className="text-6xl text-wrap font-bold tracking-tighter xl:text-8xl/none text-white">
-                Vuln - VANGUARD
-              </h1>
-              <p className="max-w-[500px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Innovate with the best. Build the future of the web. Exciting
-                prizes await.
-              </p>
-            </div>
-            
-            <div
-              className="apply-button"
-              data-hackathon-slug="hackinnovate"
-              data-button-theme="light"
-            style="height: 44px; width: 312px"
-            ></div>
-          </div> */}
+      <div className=" bg-gradient-to-r from-[#0a321c]/80 via-black-800/80 to-[#0a321c]-500/80 overflow-x-hidden ">
+      <section className="bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,0a321c,black_100%)] h-screen w-full ">
+          <HeroSection />
           <div className="max-[450px]:hidden font-bold text-4xl absolute bottom-0 h-[150px] w-10/12 mx-auto flex items-center justify-center text-white">
             {/* <Countdown /> */}
           </div>
         </section>
-        <section className="py-12 md:py-16 xl:py-24 overflow-x-hidden"></section>
         <section
           id="Prizes"
           className="py-12 md:py-16 xl:py-24 overflow-x-hidden"
@@ -200,7 +171,7 @@ export function Component() {
           </div>
         </section>
 
-        <section className="bg-black relative h-full w-full">
+        <section id="Roadmap" className="bg-black relative h-full w-full">
           <Timeline />
         </section>
         <section id="Perks" className=" py-16 md:py-16 xl:py-24">
@@ -311,7 +282,6 @@ export function Component() {
           </div>
         </section>
       </div>
-      <PopUp />
     </>
   );
 }
