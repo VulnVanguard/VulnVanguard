@@ -1,3 +1,4 @@
+
 import React from "react";
 import cog from "@/public/assets/cog copy.png"
 import Image from "next/image";
@@ -7,6 +8,7 @@ import noodle from "@/public/assets/noodle copy.png"
 
 export const HeroSection = () => {
   return (
+
     <div className="relative container mx-auto px-4 py-8 h-full flex flex-col justify-center">
       <div className="md:flex md:justify-between items-center">
         <div className="md:w-1/2 z-10">
@@ -50,8 +52,11 @@ export const HeroSection = () => {
               className="w-full h-full object-contain"
             />
           </div>
+
         </div>
       </div>
     </div>
   );
+
 };
+
