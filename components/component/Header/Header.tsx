@@ -27,7 +27,7 @@ const Header = () => {
         geistMono.className
       }
     >
-      <div className="backdrop-blur-xl bg-gradient-to-r from-[#0a321c]/90 via-black-800/50 to-[#0a321c]-500/60 rounded-xl text-white px-6 h-20 flex items-center justify-between">
+      <div className=" rounded-xl text-white px-6 h-20 flex items-center justify-between">
         {/* Logo Section */}
         <div className="flex items-center h-full">
           <NavigationLink className="flex items-center h-full" href="/#">

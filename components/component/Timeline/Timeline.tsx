@@ -146,7 +146,7 @@ export const Timeline = () => {
   });
 
   return (
-    <div ref={pinnedref} className="pinned">
+    <div ref={pinnedref} className="pinned bg-gradient-to-r from-[#0a321c]/80 via-black-800/80 to-[#0a321c]-500/80">
       <div ref={stickyHeaderref} className="sticky-header">
         <h1>ROADMAP.</h1>
       </div>
