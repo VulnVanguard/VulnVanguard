@@ -18,20 +18,17 @@ export const HeroSection = () => {
           <div className="text-white text-xl mt-4">
             {`<<`} Trust Nothing, Secure Everything {`>>`}
           </div>
-          <p className="text-white text-xl mt-6 tracking-tight">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugiat
-            vero id sequi illo asperiores vitae ipsam illum, adipisci optio
-            necessitatibus quos saepe culpa eos, molestiae maxime. Possimus, rem
-            suscipit?
+          <p className="text-white text-xl mt-6 tracking-tight text-left">
+          VulnVANGUARD is a 24-hour cyber security competition organized by the GeeksforGeeks SRMIST Delhi-NCR Student Chapter. It is designed for students who are interested in ethical hacking, cybersecurity, and technology. The event focuses on finding and fixing security problems in web applications, mobile applications and hardware systems. Participants will work on real-world challenges to test their skills in identifying, analysing, and solving security issues.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 mt-8">
+          {/* <div className="flex flex-col sm:flex-row gap-4 mt-8">
             <button className="bg-green-700 hover:bg-green-800 text-white py-3 px-6 rounded">
               Apply with Unstop
             </button>
             <button className="bg-green-700 hover:bg-green-800 text-white py-3 px-6 rounded">
               Apply with Devpost
             </button>
-          </div>
+          </div> */}
         </div>
         
         <div className="relative md:w-1/2 flex justify-center items-center mt-10 md:mt-0">

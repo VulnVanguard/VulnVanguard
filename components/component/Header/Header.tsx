@@ -10,9 +10,7 @@ import localFont from "next/font/local";
 
 const geistMono = localFont({
   src: "../../../public/fonts/GeistMonoVF.woff",
-  weight:"800",
-
-  
+  weight: "800",
 });
 
 const Header = () => {
@@ -27,7 +25,7 @@ const Header = () => {
         geistMono.className
       }
     >
-      <div className=" rounded-xl text-white px-6 h-20 flex items-center justify-between">
+      <div className=" backdrop-blur-lg rounded-xl text-white px-6 h-20 flex items-center justify-between">
         {/* Logo Section */}
         <div className="flex items-center h-full">
           <NavigationLink className="flex items-center h-full" href="/#">
@@ -36,7 +34,7 @@ const Header = () => {
                 src="/logo.webp"
                 alt="vuln-vanguard logo"
                 width={100}
-                height={80}
+                height={100}
                 className="object-contain absolute  "
               />
             </div>
@@ -61,42 +59,47 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
           <NavigationLink
-            href="/#Roadmap"
-            className="text-white hover:text-green-400 text-sm transition-colors"
-          >
-            <span data-hover="Roadmap">Roadmap</span>
-          </NavigationLink>
-          <NavigationLink
             href="/#Prizes"
             className="text-white hover:text-green-400 text-sm transition-colors"
           >
             <span data-hover="Prizes">Prizes</span>
           </NavigationLink>
-          <Link
-            href="/solutions"
+          <NavigationLink
+            href="/#Roadmap"
             className="text-white hover:text-green-400 text-sm transition-colors"
           >
-            <span data-hover="Solutions">Solutions</span>
-          </Link>
-          <Link
-            href="/products"
-            className="text-white hover:text-green-400 text-sm transition-colors"
-          >
-            <span data-hover="Products">Products</span>
-          </Link>
+            <span data-hover="Roadmap">Roadmap</span>
+          </NavigationLink>
+
           <NavigationLink
             href="/#Sponsors"
             className="text-white hover:text-green-400 text-sm transition-colors"
           >
             <span data-hover="Sponsors">Sponsors</span>
           </NavigationLink>
+          <NavigationLink
+            href="/#Judges"
+            className="text-white hover:text-green-400 text-sm transition-colors"
+          >
+            <span data-hover="Judges">Judges</span>
+          </NavigationLink>
+          <Link
+            href="/#Mentors"
+            className="text-white hover:text-green-400 text-sm transition-colors"
+          >
+            <span data-hover="Mentors">Mentors</span>
+          </Link>
         </nav>
 
         {/* Login Button */}
         <div className="hidden md:block">
-          <button className="bg-green-700 hover:bg-green-600 text-white px-3 py-1.5 text-sm rounded-md transition-colors">
-            <span data-hover="Login">Login</span>
-          </button>
+          <Link
+            href="https://www.srmist-ncr-gfg.club/Registration"
+            target="_blank"
+            className="bg-green-700 hover:bg-green-600 text-white px-3 py-1.5 text-sm rounded-md transition-colors inline-block"
+          >
+            <span data-hover="Register Now !!!">Register Now !!!</span>
+          </Link>
         </div>
 
         {/* Mobile Menu (Conditionally Rendered) */}
@@ -132,9 +135,15 @@ const Header = () => {
             >
               <span data-hover="Resources">Resources</span>
             </Link>
-            <button className="bg-green-700 hover:bg-green-600 text-white py-2 px-4 rounded-md mt-2">
-              <span data-hover="Login">Login</span>
-            </button>
+            <div className="hidden md:block">
+              <Link
+                href="https://www.srmist-ncr-gfg.club/Registration"
+                target="_blank"
+                className="bg-green-700 hover:bg-green-600 text-white px-3 py-1.5 text-sm rounded-md transition-colors inline-block"
+              >
+                <span data-hover="Register Now !!!">Register Now !!!</span>
+              </Link>
+            </div>
           </div>
         )}
       </div>

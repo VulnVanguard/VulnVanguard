@@ -11,6 +11,7 @@ import React from "react";
 import { Timeline } from "./Timeline/Timeline";
 import { ThreeDMarquee } from "./ThreedMarquee";
 import { HeroSection } from "./HeroSection/HeroSection";
+import gfg_img from "@/public/sponsors/gfg.png"
 
 export function Component() {
   useEffect(() => {
@@ -24,7 +25,33 @@ export function Component() {
     };
   }, []);
 
-  const images = [];
+  const images = [
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    `${gfg_img}`,
+    
+
+  ];
   return (
     <>
       <div className=" bg-gradient-to-r from-[#0a321c]/80 via-black-800/80 to-[#0a321c]-500/80 overflow-x-hidden ">
@@ -40,9 +67,9 @@ export function Component() {
         >
           <div className="w-11/12 md:w-10/12 mx-auto flex flex-col flex-wrap max-[1300px]:justify-center items-center justify-evenly xl:gap-10">
             <img
-              src="/prize_rotate.webp"
+              src="/perk_rotate.webp"
               alt="rotate"
-              className="absolute -z-2 !max-w-8/12 max-[450px]:!max-w-[300px] max-[450px]:w-10/12 opacity-20 animate-[spin_100s_linear_infinite]"
+              className="absolute -z-2 !max-w-8/12 max-[450px]:!max-w-[300px] max-[450px]:w-10/12 opacity-50 animate-[spin_100s_linear_infinite]"
               loading="lazy"
             />
             <div className="max-[450px]:w-11/12 flex text-center justify-center items-center space-y-4 z-10">
@@ -114,7 +141,7 @@ export function Component() {
               </div>
               <p className="text-3xl font-bold col-span-2">Track Prizes</p>
               <div className="flex gap-4 flex-wrap items-center justify-center">
-                <div className="flex flex-col justify-center items-center gap-1 bg-white/70 p-4 rounded-br-[25%] rounded-tl-[25%]  h-[150px]">
+                {/* <div className="flex flex-col justify-center items-center gap-1 bg-white/70 p-4 rounded-br-[25%] rounded-tl-[25%]  h-[150px]">
                   <img
                     alt="Polygon"
                     className="overflow-hidden rounded-lg object-contain object-center"
@@ -126,17 +153,17 @@ export function Component() {
                     <h3 className="font-semibold">Polygon</h3>
                     <p className="text-sm text-black/90">Prize worth - $200</p>
                   </div>
-                </div>
+                </div> */}
                 <div className="flex flex-col justify-center items-center gap-1 bg-white/70 p-4 rounded-bl-[25%] rounded-tr-[25%]  h-[150px]">
                   <img
-                    src="https://assets.devfolio.co/content/c7839676bfcc4363b7a42fcacb52eaf3/70095ac7-8485-49ab-9117-342196b48c67.png"
+                    src="https://www.freepnglogos.com/uploads/microsoft-logo-png-transparent-background-1.png"
                     className="overflow-hidden rounded-lg object-contain object-center"
                     loading="lazy"
                     alt="ETHIndia"
                     width="250"
                   />
                   <div className="flex-1 grid gap-1.5 mt-2 text-black">
-                    <h3 className="font-semibold">ETHIndia</h3>
+                    <h3 className="font-semibold">Microsoft</h3>
                     <p className="text-sm text-black/90">Prize worth - $100</p>
                   </div>
                 </div>
@@ -180,7 +207,7 @@ export function Component() {
               <img
                 src="/perk_rotate.webp"
                 alt="rotate"
-                className="!max-w-[400px] max-[450px]:!max-w-[300px] max-[450px]:w-10/12 opacity-60 animate-[spin_10s_linear_infinite]"
+                className="!max-w-[400px] max-[450px]:!max-w-[300px] max-[450px]:w-10/12 opacity-70 animate-[spin_10s_linear_infinite]"
                 loading="lazy"
               />
               <div className="max-[450px]:w-11/12 max-[450px]:text-center absolute">
