@@ -1,8 +1,8 @@
 import { Ref, useEffect, useRef } from 'react';
 
 const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-const DELAY = 40;
-const ITERATION = 0.5;
+const DELAY = 30;
+const ITERATION = 1/3;
 
 export const useHoverAnimation = <T extends HTMLElement = HTMLElement>(): Ref<T> => {
   const ref = useRef<T>(null);

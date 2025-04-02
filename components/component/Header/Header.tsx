@@ -20,10 +20,7 @@ const Header = () => {
   return (
     <header
       ref={headerRef}
-      className={
-        `fixed top-2 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl mx-auto z-50 ` +
-        geistMono.className
-      }
+      className={`fixed top-2 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl mx-auto z-50 `}
     >
       <div className=" backdrop-blur-lg rounded-xl text-white px-6 h-20 flex items-center justify-between">
         {/* Logo Section */}
@@ -60,32 +57,32 @@ const Header = () => {
         <nav className="hidden md:flex items-center gap-6">
           <NavigationLink
             href="/#Prizes"
-            className="text-white hover:text-green-400 text-sm transition-colors"
+            className={`text-white hover:text-green-400  transition-colors text-xl ${geistMono.className}`}
           >
             <span data-hover="Prizes">Prizes</span>
           </NavigationLink>
           <NavigationLink
             href="/#Roadmap"
-            className="text-white hover:text-green-400 text-sm transition-colors"
+            className={`text-white hover:text-green-400 transition-colors text-xl ${geistMono.className}`}
           >
             <span data-hover="Roadmap">Roadmap</span>
           </NavigationLink>
 
           <NavigationLink
             href="/#Sponsors"
-            className="text-white hover:text-green-400 text-sm transition-colors"
+            className={`text-white hover:text-green-400 text-xl transition-colors ${geistMono.className}`}
           >
             <span data-hover="Sponsors">Sponsors</span>
           </NavigationLink>
           <NavigationLink
             href="/#Judges"
-            className="text-white hover:text-green-400 text-sm transition-colors"
+            className={`text-white hover:text-green-400 text-xl transition-colors ${geistMono.className}`}
           >
             <span data-hover="Judges">Judges</span>
           </NavigationLink>
           <NavigationLink
             href="/#Mentors"
-            className="text-white hover:text-green-400 text-sm transition-colors"
+            className={`text-white hover:text-green-400 text-xl transition-colors ${geistMono.className}`}
           >
             <span data-hover="Mentors">Mentors</span>
           </NavigationLink>
@@ -105,37 +102,37 @@ const Header = () => {
         {/* Mobile Menu (Conditionally Rendered) */}
         {open && (
           <div className="md:hidden absolute top-full mt-2 left-0 right-0 backdrop-blur-md bg-zinc-900/90 rounded-xl p-4 flex flex-col gap-4">
-             <NavigationLink
-            href="/#Prizes"
-            className="text-white hover:text-green-400 text-sm transition-colors"
-          >
-            <span data-hover="Prizes">Prizes</span>
-          </NavigationLink>
-          <NavigationLink
-            href="/#Roadmap"
-            className="text-white hover:text-green-400 text-sm transition-colors"
-          >
-            <span data-hover="Roadmap">Roadmap</span>
-          </NavigationLink>
+            <NavigationLink
+              href="/#Prizes"
+              className="text-white hover:text-green-400 text-sm transition-colors"
+            >
+              <span data-hover="Prizes">Prizes</span>
+            </NavigationLink>
+            <NavigationLink
+              href="/#Roadmap"
+              className="text-white hover:text-green-400 text-sm transition-colors"
+            >
+              <span data-hover="Roadmap">Roadmap</span>
+            </NavigationLink>
 
-          <NavigationLink
-            href="/#Sponsors"
-            className="text-white hover:text-green-400 text-sm transition-colors"
-          >
-            <span data-hover="Sponsors">Sponsors</span>
-          </NavigationLink>
-          <NavigationLink
-            href="/#Judges"
-            className="text-white hover:text-green-400 text-sm transition-colors"
-          >
-            <span data-hover="Judges">Judges</span>
-          </NavigationLink>
-          <NavigationLink
-            href="/#Mentors"
-            className="text-white hover:text-green-400 text-sm transition-colors"
-          >
-            <span data-hover="Mentors">Mentors</span>
-          </NavigationLink>
+            <NavigationLink
+              href="/#Sponsors"
+              className="text-white hover:text-green-400 text-sm transition-colors"
+            >
+              <span data-hover="Sponsors">Sponsors</span>
+            </NavigationLink>
+            <NavigationLink
+              href="/#Judges"
+              className="text-white hover:text-green-400 text-sm transition-colors"
+            >
+              <span data-hover="Judges">Judges</span>
+            </NavigationLink>
+            <NavigationLink
+              href="/#Mentors"
+              className="text-white hover:text-green-400 text-sm transition-colors"
+            >
+              <span data-hover="Mentors">Mentors</span>
+            </NavigationLink>
             <div className="">
               <Link
                 href="https://www.srmist-ncr-gfg.club/Registration"
