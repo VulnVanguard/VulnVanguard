@@ -83,12 +83,12 @@ const Header = () => {
           >
             <span data-hover="Judges">Judges</span>
           </NavigationLink>
-          <Link
+          <NavigationLink
             href="/#Mentors"
             className="text-white hover:text-green-400 text-sm transition-colors"
           >
             <span data-hover="Mentors">Mentors</span>
-          </Link>
+          </NavigationLink>
         </nav>
 
         {/* Login Button */}
@@ -105,37 +105,38 @@ const Header = () => {
         {/* Mobile Menu (Conditionally Rendered) */}
         {open && (
           <div className="md:hidden absolute top-full mt-2 left-0 right-0 backdrop-blur-md bg-zinc-900/90 rounded-xl p-4 flex flex-col gap-4">
-            <Link
-              href="/company"
-              className="text-white hover:text-green-400 py-2 px-4 w-full"
-            >
-              <span data-hover="Company">Company</span>
-            </Link>
-            <Link
-              href="/pricing"
-              className="text-white hover:text-green-400 py-2 px-4 w-full"
-            >
-              <span data-hover="Pricing">Pricing</span>
-            </Link>
-            <Link
-              href="/solutions"
-              className="text-white hover:text-green-400 py-2 px-4 w-full"
-            >
-              <span data-hover="Solutions">Solutions</span>
-            </Link>
-            <Link
-              href="/products"
-              className="text-white hover:text-green-400 py-2 px-4 w-full"
-            >
-              <span data-hover="Products">Products</span>
-            </Link>
-            <Link
-              href="/resources"
-              className="text-white hover:text-green-400 py-2 px-4 w-full"
-            >
-              <span data-hover="Resources">Resources</span>
-            </Link>
-            <div className="hidden md:block">
+             <NavigationLink
+            href="/#Prizes"
+            className="text-white hover:text-green-400 text-sm transition-colors"
+          >
+            <span data-hover="Prizes">Prizes</span>
+          </NavigationLink>
+          <NavigationLink
+            href="/#Roadmap"
+            className="text-white hover:text-green-400 text-sm transition-colors"
+          >
+            <span data-hover="Roadmap">Roadmap</span>
+          </NavigationLink>
+
+          <NavigationLink
+            href="/#Sponsors"
+            className="text-white hover:text-green-400 text-sm transition-colors"
+          >
+            <span data-hover="Sponsors">Sponsors</span>
+          </NavigationLink>
+          <NavigationLink
+            href="/#Judges"
+            className="text-white hover:text-green-400 text-sm transition-colors"
+          >
+            <span data-hover="Judges">Judges</span>
+          </NavigationLink>
+          <NavigationLink
+            href="/#Mentors"
+            className="text-white hover:text-green-400 text-sm transition-colors"
+          >
+            <span data-hover="Mentors">Mentors</span>
+          </NavigationLink>
+            <div className="">
               <Link
                 href="https://www.srmist-ncr-gfg.club/Registration"
                 target="_blank"
