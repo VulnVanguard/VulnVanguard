@@ -26,7 +26,17 @@ export const Timeline = () => {
     const pinnedHeight = window.innerHeight * (cardsCount + 1);
     const startRotation = [0, 5, 0, -5, 3, -3, 2, -2, 1];
     const endRotation = [-10, -5, 10, 5, -8, 8, -6, 6, -4];
-    const progressColor = ["#ecb74c", "#7dd8cd", "#e0ff57", "#7dd8cd", "#ff6b6b", "#4ecdc4", "#45b7d1", "#96c93d", "#f7d794"];
+    const progressColor = [
+      "#ecb74c",
+      "#7dd8cd",
+      "#e0ff57",
+      "#7dd8cd",
+      "#ff6b6b",
+      "#4ecdc4",
+      "#45b7d1",
+      "#96c93d",
+      "#f7d794",
+    ];
 
     cards.forEach((card, index) => {
       gsap.set(card, { rotation: startRotation[index] });
@@ -40,7 +50,19 @@ export const Timeline = () => {
           duration: 0.5,
           ease: "power2.inOut",
         });
+
+        const paragraphs = index.querySelectorAll("p");
+
+        // Apply or remove strikethrough based on whether this index is before or equal to the active one
+        paragraphs.forEach((p) => {
+          gsap.to(p, {
+            textDecoration: i <= newIndex ? "line-through" : "none",
+            duration: 0.5,
+            ease: "power2.inOut",
+          });
+        });
       });
+
       setcurrentActiveIndex(newIndex);
     }
 
@@ -135,7 +157,10 @@ export const Timeline = () => {
   });
 
   return (
-    <div ref={pinnedref} className="pinned bg-gradient-to-r from-[#0a321c]/80 via-black-800/80 to-[#0a321c]-500/80">
+    <div
+      ref={pinnedref}
+      className="pinned bg-gradient-to-r from-[#0a321c]/80 via-black-800/80 to-[#0a321c]-500/80"
+    >
       <div ref={stickyHeaderref} className="sticky-header">
         <h1>ROADMAP.</h1>
       </div>

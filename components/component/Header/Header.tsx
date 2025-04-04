@@ -7,7 +7,6 @@ import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
 import NavigationLink from "./NavigationLink";
 import localFont from "next/font/local";
-
 const geistMono = localFont({
   src: "../../../public/fonts/GeistMonoVF.woff",
   weight: "800",
@@ -93,7 +92,7 @@ const Header = () => {
           <Link
             href="https://www.srmist-ncr-gfg.club/Registration"
             target="_blank"
-            className="bg-green-700 hover:bg-green-600 text-white px-3 py-1.5 text-sm rounded-md transition-colors inline-block"
+            className={`bg-green-700 hover:bg-green-600 text-white px-3 py-1.5 text-lg rounded-md transition-colors inline-block ${geistMono.className}`}
           >
             <span data-hover="Register Now !!!">Register Now !!!</span>
           </Link>

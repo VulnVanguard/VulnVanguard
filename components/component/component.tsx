@@ -6,12 +6,10 @@ import FaqSection from "./FaqSection";
 import Countdown from "./CountDown";
 import JudgeCard from "./judgeCard";
 import Perks from "@/components/component/Perks";
-import ProblemSection from "./statements";
 import React from "react";
 import { Timeline } from "./Timeline/Timeline";
-import { ThreeDMarquee } from "./ThreedMarquee";
+import { SponsorSection } from "./SponsorSection";
 import { HeroSection } from "./HeroSection/HeroSection";
-import gfg_img from "@/public/sponsors/gfg.png"
 
 export function Component() {
   useEffect(() => {
@@ -25,40 +23,15 @@ export function Component() {
     };
   }, []);
 
-  const images = [
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    `${gfg_img}`,
-    
-
-  ];
+  
   return (
     <>
       <div className=" bg-gradient-to-r from-[#0a321c]/80 via-black-800/80 to-[#0a321c]-500/80 overflow-x-hidden ">
-      <section className="bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,0a321c,black_100%)] h-screen w-full ">
+      <section className="bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,0a321c,black_100%)] h-screen flex justify-center items-center ">
           <HeroSection />
-          <div className="max-[450px]:hidden font-bold text-4xl absolute bottom-0 h-[150px] w-10/12 mx-auto flex items-center justify-center text-white">
-            {/* <Countdown /> */}
+          
+          <div className="max-[450px]:hidden font-bold text-4xl absolute bottom-[100px] w-10/12 mx-auto flex items-center justify-center text-white">
+            <Countdown />
           </div>
         </section>
         <section
@@ -227,7 +200,7 @@ export function Component() {
           id="Sponsors"
           className=" md:py-16 xl:py-24 overflow-x-hidden "
         >
-          <ThreeDMarquee images={images} />
+          <SponsorSection/>
         </section>
         {/* // -----------------JUDGES SECTION BELOW ----------------------- */}
         {/* < section className="bg-gray-900 py-12 md:py-16 xl:py-24 overflow-x-hidden" >

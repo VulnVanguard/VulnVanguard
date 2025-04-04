@@ -1,59 +1,95 @@
-
 import React from "react";
-import cog from "@/public/assets/cog copy.png"
+import cog from "@/public/assets/cog copy.png";
 import Image from "next/image";
-import cylinder from "@/public/assets/cylinder copy.png"
-import noodle from "@/public/assets/noodle copy.png"
-
-
+import cylinder from "@/public/assets/cylinder copy.png";
+import noodle from "@/public/assets/noodle copy.png";
+import hero from "@/public/hero.png";
+import star from "@/public/assets/star copy.png";
+import { motion } from "motion/react";
+import localFont from "next/font/local";
+const geistMono = localFont({
+  src: "../../../public/fonts/GeistMonoVF.woff",
+  weight: "800",
+});
 export const HeroSection = () => {
   return (
-
-    <div className="relative container mx-auto px-4 py-8 h-full flex flex-col justify-center">
-      <div className="md:flex md:justify-between items-center">
-        <div className="md:w-1/2 z-10">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-lime-400 to-teal-500 bg-clip-text text-transparent">
-            Vuln<br />VANGUARD
-          </h1>
-          <div className="text-white text-xl mt-4">
-            {`<<`} Trust Nothing, Secure Everything {`>>`}
-          </div>
-          <p className="text-white text-xl mt-6 tracking-tight text-left">
-          VulnVANGUARD is a 24-hour cyber security competition organized by the GeeksforGeeks SRMIST Delhi-NCR Student Chapter. It is designed for students who are interested in ethical hacking, cybersecurity, and technology. The event focuses on finding and fixing security problems in web applications, mobile applications and hardware systems. Participants will work on real-world challenges to test their skills in identifying, analysing, and solving security issues.
-          </p>
-          {/* <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <button className="bg-green-700 hover:bg-green-800 text-white py-3 px-6 rounded">
-              Apply with Unstop
-            </button>
-            <button className="bg-green-700 hover:bg-green-800 text-white py-3 px-6 rounded">
-              Apply with Devpost
-            </button>
-          </div> */}
-        </div>
-        
-        <div className="relative md:w-1/2 flex justify-center items-center mt-10 md:mt-0">
-          {/* Main cog/star graphic */}
-          <div className="relative w-64 h-64 md:w-96 md:h-96">
-            <Image
-              src={cog} 
-              alt="Cog/star graphic"
-              className="w-full h-full object-contain"
-            />
-          </div>
-          
-          {/* Cylinder graphic */}
-          <div className="absolute -top-4 -left-4 md:-top-8 md:-left-16 w-24 h-24 md:w-40 md:h-40">
-            <Image
-              src={cylinder}
-              alt="Cylinder graphic"
-              className="w-full h-full object-contain"
-            />
-          </div>
-
-        </div>
+    <div className="relative w-full ">
+      {/* Hero image centered */}
+      <div
+        className={`relative flex flex-col justify-center items-center ${geistMono.className}`}
+      >
+        <Image
+          src={hero}
+          alt="hero"
+          width={1200}
+          height={500}
+          className="z-10 relative"
+        />
+        <p
+          className="absolute max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl text-white text-center z-10
+                bottom-[-18rem] sm:bottom-16 md:bottom-20 lg:bottom-[100px]"
+        >
+          VulnVANGUARD is a 24-hour cyber security competition organized by the
+          GeeksforGeeks SRMIST Delhi-NCR Student Chapter. It is designed for
+          students who are interested in ethical hacking, cybersecurity, and
+          technology. The event focuses on finding and fixing security problems
+          in web applications, mobile applications and hardware systems.
+          Participants will work on real-world challenges to test their skills
+          in identifying, analysing, and solving security issues.
+        </p>
       </div>
+
+      <motion.img
+        src={cog.src}
+        alt="cog"
+        className="absolute 
+    top-[400px] right-[63px]
+    w-[250px] h-[250px]
+    sm:top-[100px] sm:right-[70px]
+    sm:w-[300px] sm:h-[300px]
+    md:top-[120px] md:right-[80px]
+    md:w-[400px] md:h-[400px]
+    lg:top-[150px] lg:right-[100px]
+    lg:w-[500px] lg:h-[500px]"
+        animate={{
+          translateY: [-30, 30],
+        }}
+        transition={{
+          repeat: Infinity,
+          repeatType: "mirror",
+          duration: 5,
+          ease: "easeInOut",
+        }}
+      />
+      <Image
+        src={cylinder}
+        alt="cylinder"
+        width={200}
+        height={200}
+        className="absolute top-[100px] right-[642px] "
+      />
+      <Image
+        src={noodle}
+        alt="noodle"
+        height={200}
+        width={200}
+        className="absolute right-[174px] bottom-[50px] rotate-[35deg] z-10 hidden sm:block "
+      />
+      <motion.img
+        src={star.src}
+        alt="star"
+        height={200}
+        width={200}
+        className="absolute hidden sm:block bottom-[200px] left-[100px]"
+        animate={{
+          translateY: [-30, 30],
+        }}
+        transition={{
+          repeat: Infinity,
+          repeatType: "mirror",
+          duration: 5,
+        }}
+      />
     </div>
   );
-
 };
-
