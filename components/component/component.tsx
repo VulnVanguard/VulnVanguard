@@ -23,13 +23,12 @@ export function Component() {
     };
   }, []);
 
-  
   return (
     <>
-      <div className=" bg-gradient-to-r from-[#0a321c]/80 via-black-800/80 to-[#0a321c]-500/80 overflow-x-hidden ">
-      <section className="bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,0a321c,black_100%)] h-screen flex justify-center items-center ">
+      <div className=" bg-gradient-to-r from-[#0a321c]/80 via-black-800/80 to-[#0a321c]-500 overflow-x-hidden ">
+        <section className=" h-screen flex justify-center items-center ">
           <HeroSection />
-          
+
           <div className="max-[450px]:hidden font-bold text-4xl absolute bottom-[100px] w-10/12 mx-auto flex items-center justify-center text-white">
             <Countdown />
           </div>
@@ -198,9 +197,20 @@ export function Component() {
         </section>
         <section
           id="Sponsors"
-          className=" md:py-16 xl:py-24 overflow-x-hidden "
+          className="  overflow-x-hidden  h-[200px] md:h-[400px] md:py-4"
         >
-          <SponsorSection/>
+          <div className=" relative   w-11/12 md:w-10/12 mx-auto grid gap-6 text-center md:px-6 ">
+            <div className="space-y-3">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl">
+                Our Sponsors
+              </h2>
+              <p className="mx-auto max-w-[600px] text-gray-500/70 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Join us in our mission to innovate and inspire. Together, we can
+                make a difference!
+              </p>
+            </div>
+          </div>
+          <SponsorSection />
         </section>
         {/* // -----------------JUDGES SECTION BELOW ----------------------- */}
         {/* < section className="bg-gray-900 py-12 md:py-16 xl:py-24 overflow-x-hidden" >

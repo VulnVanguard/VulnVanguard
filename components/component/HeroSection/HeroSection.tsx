@@ -23,11 +23,11 @@ export const HeroSection = () => {
           alt="hero"
           width={1200}
           height={500}
-          className="z-10 relative"
+          className="z-10 relative bottom-[250px] sm:bottom-[50px]"
         />
         <p
           className="absolute max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl text-white text-center z-10
-                bottom-[-18rem] sm:bottom-16 md:bottom-20 lg:bottom-[100px]"
+                bottom-[-18rem] sm:bottom-16 md:bottom-20 lg:bottom-[100px] hidden sm:block"
         >
           VulnVANGUARD is a 24-hour cyber security competition organized by the
           GeeksforGeeks SRMIST Delhi-NCR Student Chapter. It is designed for
@@ -43,7 +43,7 @@ export const HeroSection = () => {
         src={cog.src}
         alt="cog"
         className="absolute 
-    top-[400px] right-[63px]
+    top-[200px] right-[63px]
     w-[250px] h-[250px]
     sm:top-[100px] sm:right-[70px]
     sm:w-[300px] sm:h-[300px]
