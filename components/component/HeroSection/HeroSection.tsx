@@ -25,18 +25,7 @@ export const HeroSection = () => {
           height={500}
           className="z-10 relative bottom-[250px] sm:bottom-[50px]"
         />
-        <p
-          className="absolute max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl text-white text-center z-10
-                bottom-[-18rem] sm:bottom-16 md:bottom-20 lg:bottom-[100px] hidden sm:block"
-        >
-          VulnVANGUARD is a 24-hour cyber security competition organized by the
-          GeeksforGeeks SRMIST Delhi-NCR Student Chapter. It is designed for
-          students who are interested in ethical hacking, cybersecurity, and
-          technology. The event focuses on finding and fixing security problems
-          in web applications, mobile applications and hardware systems.
-          Participants will work on real-world challenges to test their skills
-          in identifying, analysing, and solving security issues.
-        </p>
+
       </div>
 
       <motion.img

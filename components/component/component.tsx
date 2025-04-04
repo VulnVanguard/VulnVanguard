@@ -41,7 +41,7 @@ export function Component() {
             <img
               src="/perk_rotate.webp"
               alt="rotate"
-              className="absolute -z-2 !max-w-8/12 max-[450px]:!max-w-[300px] max-[450px]:w-10/12 opacity-50 animate-[spin_100s_linear_infinite]"
+              className="absolute -z-2 !max-w-8/12 max-[450px]:!max-w-[300px] max-[450px]:w-10/12 opacity-70 animate-[spin_100s_linear_infinite]"
               loading="lazy"
             />
             <div className="max-[450px]:w-11/12 flex text-center justify-center items-center space-y-4 z-10">
