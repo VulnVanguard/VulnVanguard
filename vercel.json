@@ -1,0 +1,10 @@
+{
+    "installCommand": "rm -f package-lock.json && npm install --force",
+    "build": {
+      "env": {
+        "NPM_CONFIG_PLATFORM": "linux",
+        "NPM_CONFIG_ARCH": "x64",
+        "NPM_CONFIG_OPTIONAL": "false"
+      }
+    }
+  }
