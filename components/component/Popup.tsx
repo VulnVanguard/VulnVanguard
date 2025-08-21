@@ -16,7 +16,7 @@ export default function PopUp() {
       {/* // <button className=" sticky inset-0"> */}
 
       {/* }
-        position="right center"
+        position="right center".......
       > */}
       {/* <div>Popup content here !!</div> */}
       {/* <div> Guidelines here</div> */}
