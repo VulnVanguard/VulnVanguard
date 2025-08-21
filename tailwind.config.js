@@ -7,12 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      container: {
-        center: true,
-        padding: {
-          DEFAULT: "20px",
-          lg: "80px",
-        },
+      backgroundImage: {
+        "hero-section": "url('/innovate_hero.jpg')",
+        // "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        // "gradient-conic":
+        //   "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
         "spin-slow": "spin 10s linear infinite",
