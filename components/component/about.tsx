@@ -14,7 +14,7 @@
 //   const animationRef = useRef(null);
 //   const [isLoaded, setIsLoaded] = useState(false);
 //   const [textAnimation, setTextAnimation] = useState(false);
-//   const [terminalLines, setTerminalLines] = useState([]);
+//   const [terminalLines, setTerminalLines] = useState([]);..
 //   const [currentCommand, setCurrentCommand] = useState('');
 //   const [activeSection, setActiveSection] = useState(0);
 
