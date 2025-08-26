@@ -98,10 +98,11 @@ export default function MentorCard() {
                   </Link>
                 )}
               </div>
-              
+              {mentor.twitter && (
               <Link href={mentor.linkedin} className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white px-6 py-2 rounded-xl text-sm font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/25">
                 Connect
               </Link>
+              )}
             </div>
           </div>
         </div>
