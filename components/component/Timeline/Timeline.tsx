@@ -637,7 +637,7 @@ export const Timeline = () => {
         <div className="card-title">
           <p>Day 1 - 12:00 PM</p>
           <h1>
-            Round 1: <span>Decoder</span>
+            Round 1: <span>Cypher Chase</span>
           </h1>
           <p>Linux challenges - 4 riddles</p>
         </div>
