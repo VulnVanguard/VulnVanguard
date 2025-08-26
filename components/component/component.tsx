@@ -1618,10 +1618,10 @@ export function Component() {
           <h3 className="text-lg font-bold text-white">Email</h3>
         </div>
         <a
-          href="mailto:geeksforgeekssrmist@gmail.com"
+          href="mailto:vulnvanguardsrmist@gmail.com"
           className="text-red-300 hover:text-red-200 transition-colors duration-300 font-medium break-all"
         >
-          geeksforgeekssrmist@gmail.com
+          vulnvanguardsrmist@gmail.com
         </a>
       </div>
 
