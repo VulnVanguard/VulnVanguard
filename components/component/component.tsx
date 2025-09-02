@@ -1674,7 +1674,7 @@ export function Component() {
           <span className="text-red-400 font-semibold">GeeksforGeeks SRMIST Delhi-NCR</span> Campus Body
         </p>
         <p className="text-gray-400">
-          Empowering the next generation of cybersecurity & Development professionals through hands-on learning and innovation
+          Empowering the next generation of Cybersecurity & Development professionals through hands-on learning and innovation.
         </p>
       </div>
     </div>
