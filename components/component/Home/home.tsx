@@ -1834,7 +1834,7 @@ const EpicHackathonHero = () => {
   const [timeLeft, setTimeLeft] = useState({days: 0, hours: 0, minutes: 0, seconds: 0, completed: false});
   useEffect(() => {
     
-    const target = new Date('2025-09-12T03:30:00Z').getTime();
+    const target = new Date('2025-10-14T03:30:00Z').getTime();
     const interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = target - now;
